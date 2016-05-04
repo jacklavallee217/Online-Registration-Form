@@ -18,6 +18,8 @@ h1 {
 
 h2 {
   color: #78CC7A;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 #wrapper {
@@ -32,7 +34,11 @@ h2 {
   margin-bottom: 3px;
 }
 
-#banner p {
+#contact_info {
+  border-bottom: 2px solid #78CC7A;
+}
+
+p {
   font-size: 1.5em;
   font-weight: 100;
 
@@ -48,24 +54,63 @@ label {
   font-weight: 300;
 }
 
-input, select {
+select {
+  height: 2.2em;
+}
+
+input[type="text"], select {
   border: 2px solid #F4F4F4;
   border-radius: 5px;
   width: 100%;
   background-color: #F8F8F8;
 
   margin: 1em auto 2em auto;
-  padding: 1em 0;
+  padding: 0 1em;
+  line-height: 2em;
+  font-size: 1.2em;
 }
 
-input:placeholder-shown {
+textarea {
+  border: 2px solid #F4F4F4;
+  border-radius: 5px;
+  width: 100%;
+  background-color: #F8F8F8;
+
+  height: 150px;
+  font-size: 1.2em;
+}
+
+input[type="text"]:focus, select:focus {
+  outline: none;
+  border: 2px solid #78CC7A;
+}
+
+input[type="text"]:placeholder-shown {
   font-weight: 100;
   font-style: italic;
 }
 
-input::-webkit-input-placeholder, input::-moz-placeholder, input:-ms-input-placeholder, input:-moz-placeholder {
+#zip {
+  width: 50%;
 }
 
-#zip {
-    width: 50%;
+input[type="checkbox"] {
+  margin-bottom: 1.5em;
+  background-color: #F8F8F8;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+input[type="checkbox"]:checked {
+  color: #78CC7A;
+  border: 2px solid #78CC7A;
+}
+
+#checkboxes {
+  margin-bottom: 1.5em;
+}
+
+.check {
+  font-size: 1.2em;
+  margin-left: 1.2em;
 }
