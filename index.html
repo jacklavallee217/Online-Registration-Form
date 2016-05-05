@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Online Registration Form</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/media.css" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100, 100italic,400,300,700' rel='stylesheet' type='text/css'>
   </head>
 
@@ -22,9 +23,9 @@
 
       <form>
 
-        <div id="contact_info">
+        <fieldset id="contact_info">
 
-          <h2>Contact Information</h2>
+          <legend>Contact Information</legend>
 
           <label>Full Name</label><br />
           <input id="name" type="text" required="required" placeholder="Required" name="first_name"><br />
@@ -49,10 +50,10 @@
           <label>Zip Code</label><br />
           <input id="zip" type="text" name="zip_code"><br />
 
-        </div>
-        <div id="newsletter_info">
+        </fieldset>
+        <fieldset id="newsletter_info">
 
-          <h2>Newsletter</h2>
+          <legend>Newsletter</legend>
 
           <p>Select the newsletters you'd like to receive</p>
             <div id="checkboxes">
@@ -66,12 +67,21 @@
               <label class="check">Javascript News</label>
             </div>
           <p>Newsletter Format</p>
+            <div id="radioButtons">
+              <input type="radio" name="newsletter_format">
+              <label class="radio">HTML</label><br />
 
+              <input type="radio" name="newsletter_format">
+              <label class="radio">Plain Text</label><br />
+            </div>
           <p>Other topics you'd like to hear about</p>
 
           <textarea ></textarea>
 
-        </div>
+          <input type="submit" name="submit" value="Sign Up">
+          <p class="copyright">Copyright The Code Review</p>
+
+        </fieldset>
       </form>
     </div>
   </body>
