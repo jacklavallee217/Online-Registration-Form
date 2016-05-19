@@ -42,7 +42,18 @@ p {
   font-size: 1.5em;
   font-weight: 100;
 
-  margin: 0 auto 1.5em auto;
+  margin: 1.5em auto;
+}
+
+blockquote {
+  font-style: italic;
+  color: #949494;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 100;
+
+  margin: 1em auto;
+  display: block;
 }
 
 form {
@@ -71,7 +82,7 @@ input[type="text"], select {
 }
 
 textarea {
-  border: 2px solid #F4F4F4;
+  border: 2px solid #DADADA;
   border-radius: 5px;
   width: 100%;
   background-color: #F8F8F8;
@@ -113,4 +124,27 @@ input[type="checkbox"]:checked {
 .check {
   font-size: 1.2em;
   margin-left: 1.2em;
+}
+
+input[type="submit"] {
+  margin: 2em auto 0 auto;
+  display: block;
+  width: 50%;
+  height: 4em;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  background-color: #8BF58B;
+  border-radius: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #8BF58B;
+  transition: .5s ease-out;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #7AE97A;
+  border-bottom: 2px solid #4D804D;
 }
