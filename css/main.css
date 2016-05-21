@@ -22,6 +22,18 @@ h2 {
   margin-bottom: 1em;
 }
 
+fieldset {
+  margin-top: 1.5em;
+  border: none;
+}
+
+legend {
+  color: #78CC7A;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
+}
+
 #wrapper {
   width: 90%;
   margin: 0 auto;
@@ -70,7 +82,7 @@ select {
 }
 
 input[type="text"], select {
-  border: 2px solid #F4F4F4;
+  border: 2px solid #DADADA;
   border-radius: 5px;
   width: 100%;
   background-color: #F8F8F8;
@@ -101,41 +113,46 @@ input[type="text"]:placeholder-shown {
   font-style: italic;
 }
 
+label[for="zip"] {
+  display: block;
+}
+
 #zip {
   width: 50%;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"], input[type="radio"] {
   margin-bottom: 1.5em;
   background-color: #F8F8F8;
   height: 1.5em;
   width: 1.5em;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:checked, input[type="radio"]:checked {
   color: #78CC7A;
   border: 2px solid #78CC7A;
 }
 
-#checkboxes {
+#checkboxes, #radioButtons {
   margin-bottom: 1.5em;
 }
 
-.check {
+.check, .radio {
   font-size: 1.2em;
   margin-left: 1.2em;
 }
 
 input[type="submit"] {
-  margin: 2em auto 0 auto;
+  margin: 2em auto 1em auto;
   display: block;
-  width: 50%;
-  height: 4em;
+  width: 100%;
+  height: 2.5em;
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.7em;
+  line-height: 2em;
   color: #FFFFFF;
   background-color: #8BF58B;
-  border-radius: 50px;
+  border-radius: 10px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -147,4 +164,21 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #7AE97A;
   border-bottom: 2px solid #4D804D;
+
+  width: 100%;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.8em;
+  color: #FFFFFF;
+
+  background-color: #78CC7A;
+}
+
+.copyright {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: 100;
+  text-align: center;
+  margin: 0 auto 1em auto;
+  color: #808080;
 }

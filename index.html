@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Online Registration Form</title>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/media.css" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100, 100italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="css/media.css" type="text/css"/>
+    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:100,100italic,400,300,700' rel='stylesheet' type='text/css'/>
   </head>
 
   <body>
@@ -23,59 +24,92 @@
 
       <form>
 
-        <div id="contact_info">
+        <fieldset id="contact_info">
 
-          <h2>Contact Information</h2>
+          <legend>Contact Information</legend>
 
-          <label>Full Name</label><br />
-          <input id="name" type="text" required="required" placeholder="Required" name="first_name"><br />
+          <div class="contact_div">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required="required" placeholder="Required" name="first_name">
+          </div>
 
-          <label>Email Address</label><br />
-          <input id="email" type="text" required="required" placeholder="Required" name="email_address"><br />
+          <div class="contact_div">
+            <label for="email">Email Address</label>
+            <input id="email" type="text" required="required" placeholder="Required" name="email_address">
+          </div>
 
-          <label>Phone Number</label><br />
-          <input id="phone" type="text" name="phone_number"><br />
+          <div class="contact_div">
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" name="phone_number">
+          </div>
 
-          <label>Street Address</label><br />
-          <input id="street" type="text" name="street_address"><br />
+          <div class="contact_div">
+            <label for="street">Street Address</label>
+            <input id="street" type="text" name="street_address">
+          </div>
 
-          <label>State</label><br />
-          <select id="state" placeholder="Choose State" name="state"><br />
+          <div class="contact_div">
+            <label for="city">City</label>
+            <input id="city" type="text" name="city">
+          </div>
+
+          <div class="contact_div">
+            <label for="state">State</label>
+            <select id="state" name="state">
               <option disabled="disabled" selected="selected">Choose State</option>
               <option value="Vermont">VT</option>
               <option value="California">CA</option>
               <option value="New_York">NY</option>
             </select>
+          </div>
 
-          <label>Zip Code</label><br />
-          <input id="zip" type="text" name="zip_code"><br />
+          <div class="contact_div">
+            <label for="zip">Zip Code</label>
+            <input id="zip" type="text" name="zip_code">
+          </div>
 
-        </div>
-        <div id="newsletter_info">
+        </fieldset>
+        <fieldset id="newsletter_info">
 
-          <h2>Newsletter</h2>
+          <legend>Newsletter</legend>
 
           <p>Select the newsletters you'd like to receive</p>
             <div id="checkboxes">
-              <input type="checkbox">
-              <label class="check">HTML News</label><br />
+              <div class="checkbox">
+                <input value="html_check" id="html_check" type="checkbox">
+                <label for="html_check" class="check">HTML News</label>
+              </div>
 
-              <input type="checkbox">
-              <label class="check">CSS News</label><br />
+              <div class="checkbox">
+                <input value="css_check" id="css_check" type="checkbox">
+                <label for="css_check" class="check">CSS News</label>
+              </div>
 
-              <input type="checkbox">
-              <label class="check">Javascript News</label>
+              <div class="checkbox">
+                <input value="javascript_check" id="javascript_check" type="checkbox">
+                <label for="javascript_check" class="check">Javascript News</label>
+              </div>
             </div>
           <p>Newsletter Format</p>
+            <div id="radioButtons">
+              <div class="radioButton">
+                <input type="radio" id="html_radio" name="newsletter_format">
+                <label for="plaintext_radio" class="radio">HTML</label>
+              </div>
 
+              <div class="radioButton">
+                <input type="radio" id="plaintext_radio" name="newsletter_format">
+                <label for="plaintext_radio" class="radio">Plain Text</label>
+              </div>
+            </div>
           <p>Other topics you'd like to hear about</p>
 
-          <textarea ></textarea>
+          <textarea></textarea>
 
-        </div>
+          <input type="submit" name="submit" value="Sign Up">
+          <p class="copyright">Copyright The Code Review</p>
 
-        <input type="submit">
-        <blockquote>Copyright The Code Review</blockquote>
+        </fieldset>
       </form>
     </div>
   </body>
